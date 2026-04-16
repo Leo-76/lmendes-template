@@ -1,0 +1,58 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class {{ class }}Controller extends Controller
+{
+    public function index()
+    {
+        return view('{{ view }}.index');
+    }
+
+    public function create()
+    {
+        return view('{{ view }}.create');
+    }
+
+    public function store(Request $request)
+    {
+        $data = $request->validate([
+            //
+        ]);
+
+        // {{ model }}::create($data);
+
+        return redirect()->route('{{ route }}.index')
+            ->with('success', '{{ model }} created.');
+    }
+
+    public function show($id)
+    {
+        return view('{{ view }}.show', compact('id'));
+    }
+
+    public function edit($id)
+    {
+        return view('{{ view }}.edit', compact('id'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $data = $request->validate([
+            //
+        ]);
+
+        return redirect()->route('{{ route }}.index')
+            ->with('success', '{{ model }} updated.');
+    }
+
+    public function destroy($id)
+    {
+        return redirect()->route('{{ route }}.index')
+            ->with('success', '{{ model }} deleted.');
+    }
+}

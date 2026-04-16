@@ -1,0 +1,56 @@
+{
+    "name": "lmendes/template",
+    "description": "A ready-to-use Laravel template package with auth, dashboard, Blade components and helpers.",
+    "keywords": [
+        "laravel",
+        "template",
+        "starter",
+        "dashboard",
+        "auth",
+        "boilerplate"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lmendes",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lmendes\\Template\\": "src/"
+        },
+        "files": [
+            "src/Helpers/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lmendes\\Template\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lmendes\\Template\\Providers\\TemplateServiceProvider"
+            ],
+            "aliases": {
+                "Template": "Lmendes\\Template\\Facades\\Template"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,12 @@
+@extends('template::layouts.app')
+
+@section('title', '{{ title }}')
+@section('page-title', '{{ title }}')
+
+@section('content')
+
+<x-template-card title="{{ title }}">
+    {{-- Your content here --}}
+</x-template-card>
+
+@endsection
