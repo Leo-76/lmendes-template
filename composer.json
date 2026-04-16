@@ -24,8 +24,8 @@
     },
     "require-dev": {
         "orchestra/testbench": "^8.0|^9.0|^10.0",
-        "phpunit/phpunit": "^10.0|^11.0"
-      
+        "phpunit/phpunit": "^10.0|^11.0",
+        "lmendes/template": "dev-main as 1.0.0"      
     },
     "autoload": {
         "psr-4": {
@@ -53,6 +53,6 @@
     "config": {
         "sort-packages": true
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
