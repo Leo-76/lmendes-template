@@ -1,5 +1,5 @@
 {
-    "name": "leo-76/lmendes-template",
+    "name": "lmendes/template",
     "description": "A ready-to-use Laravel template package with auth, dashboard, Blade components and helpers.",
     "keywords": [
         "laravel",
